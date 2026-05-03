@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pacer_matrix_screen.dart';
 
 class GatewayScreen extends StatelessWidget {
   const GatewayScreen({super.key});
@@ -63,8 +64,9 @@ class GatewayScreen extends StatelessWidget {
                         subtitle: '89 members',
                         borderColor: const Color(0xFF39FF14), // Neon Lime
                         onTap: () {
-                          // Generic onTap function
-                          debugPrint('Hamro Run Club tapped');
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const PacerMatrixScreen()));
                         },
                       ),
                     ],
