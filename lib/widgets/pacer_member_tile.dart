@@ -6,11 +6,11 @@ class PacerMemberTile extends StatelessWidget {
   final bool isActive;
 
   const PacerMemberTile({
-    Key? key,
+    super.key,
     required this.name,
     required this.role,
     required this.isActive,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
